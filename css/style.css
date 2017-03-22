@@ -86,7 +86,8 @@ body{
 .menu ul li a{
     color: #051748;
     text-transform: uppercase;
-    font-family: ProstoSans;
+    font-family: ProstoSans, sans-serif;
+    font-weight: 700;
     transition: .3s
 }
 .menu ul li a:hover{
@@ -159,6 +160,7 @@ body{
     position: relative;
     margin-top: 160px;
     font-family: ProstoSans;
+    font-weight: 700;
 }
 .banner-title_underlindes div{
     height: 2px;
@@ -189,6 +191,7 @@ body{
     text-transform: uppercase;
     font-size: 22px;
     font-family: ProstoSans;
+    font-weight: 700;
 }
 .section1 .container{
     position: relative;
@@ -248,6 +251,7 @@ body{
     position: relative;
     top: 33%;
     font-family: ProstoSans;
+    font-weight: 700;
 }
 .develop_title_underlindes div{
     height: 2px;
@@ -397,6 +401,7 @@ body{
     color: #051748;
     font-size: 32px;
     font-family: ProstoSans;
+    font-weight: 700;
     margin-bottom: 40px;
 }
 .advantages_title_underlindes div{
@@ -450,6 +455,7 @@ body{
     color: #051748;
     font-size: 32px;
     font-family: ProstoSans;
+    font-weight: 700;
     margin: 61px 0 40px;
     position: relative;
 }
@@ -470,6 +476,7 @@ body{
     text-transform: uppercase;
     font-size: 22px;
     font-family: ProstoSans;
+    font-weight: 700;
     margin: 20px 0;
 }
 .offer_inf{
@@ -576,6 +583,7 @@ body{
     padding-top: 30px;
     text-transform: uppercase;
     font-family: ProstoSans;
+    font-weight: 700;
 }
 .section22{
     margin: 50px 0 0;
@@ -621,6 +629,7 @@ body{
     color: #051748;
     font-size: 32px;
     font-family: ProstoSans;
+    font-weight: 700;
 }
 .input_title{
     color: #051748;
