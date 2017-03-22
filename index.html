@@ -1,308 +1,331 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <title>FuelLabs</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    
+
     <script src="js/jquery-3.2.0.min.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
     <script src="js/main.js"></script>
 </head>
 <body>
-   <header class="header">
-       <div class="container">
-          <div class="logo"><img src="img/logo.png" alt=""></div>
-           <nav class="menu hidden-sm hidden-xs">
-               <ul>
-                   <li><a href="#develop">разработка</a></li>
-                   <li><a href="#advantages">преимущества</a></li>
-                   <li><a href="#offers">предложения</a></li>
-                   <li><a href="#contact-us">Контакты</a></li>
-               </ul>
-           </nav>
-           
-        <div class="to-nav-menu visible-xs visible-sm">
-	        &equiv;
-        </div>
-        <div class="menu-overlay hidden-md hidden-lg" id="over-menu"></div>
-        <div id="menu-mobile" class="nav-menu container visible-xs visible-sm">
+<header class="header">
+    <div class="container">
+        <div class="logo"><img src="img/logo.png" alt=""></div>
+        <nav class="menu hidden-sm hidden-xs">
             <ul>
                 <li><a href="#develop">разработка</a></li>
                 <li><a href="#advantages">преимущества</a></li>
                 <li><a href="#offers">предложения</a></li>
                 <li><a href="#contact-us">Контакты</a></li>
-                <li class="menu-mobile_close">&times;</li>
             </ul>
-        </div>  
-       </div>
-   </header>
+        </nav>
 
-    <section>
-        <div class="main-banner">
-            <div class="container">
-                <div class="banner-title">Оцифровывая литры
+        <div class="to-nav-menu visible-xs visible-sm">
+            &equiv;
+        </div>
+        <div class="menu-mobile_close hidden-md hidden-lg">&times;</div>
+    </div>
+</header>
+<div class="menu-overlay hidden-md hidden-lg" id="over-menu"></div>
+<div id="menu-mobile" class="nav-menu container visible-xs visible-sm">
+    <ul>
+        <li><a href="#develop">разработка</a></li>
+        <li><a href="#advantages">преимущества</a></li>
+        <li><a href="#offers">предложения</a></li>
+        <li><a href="#contact-us">Контакты</a></li>
+    </ul>
+</div>
+<div class="index-main">
+    <div class="main-banner">
+        <div class="container">
+            <div class="banner-title">Оцифровывая литры
                 <div class="banner-title_underlindes">
                     <div class="underline1"></div>
                     <div class="underline2"></div>
                 </div>
-                </div>
-                <div class="banner-text">
-                    Автоматизация процесса продажи топлива от профессионалов<br>Используй возможности, которые диктует современный мир информационных технологий<br>Увелич количество клиентов собственной сети - продавай ГСМ через интернет
-                </div>
+            </div>
+            <div class="banner-text">
+                Автоматизация процесса продажи топлива от профессионалов<br>Используй возможности, которые диктует современный мир информационных технологий<br>Увелич количество клиентов собственной сети - продавай ГСМ через интернет
             </div>
         </div>
-        
-        <div class="section1">
-            <div class="container">
-               <div class="section1_block">
-                    <div class="section1_title">Думаете это сложно и дорого?<br>Мы докажем Вам, что это не так!</div>
-                    <div class="section1_img"><img src="img/icon1.png" alt=""></div>
-                </div>
-                <div class="computer"><img src="img/big-icon12.png" alt=""></div>
+    </div>
+
+    <div class="section1">
+        <div class="container">
+            <div class="section1_block">
+                <div class="section1_title">Думаете это сложно <span>и дорого?</span><br>Мы докажем Вам, <span>что это не так!</span></div>
+                <div class="section1_img"><img src="img/icon1.png" alt=""></div>
             </div>
+            <div class="computer"><img src="img/big-icon12.png" alt=""></div>
         </div>
-        
-        <div class="develop" id="develop">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 develop-left">
-                        <div class="develop_title">Разработка
-                            <div class="develop_title_underlindes">
-                                <div class="underline1"></div>
-                                <div class="underline2"></div>
-                            </div>
+    </div>
+
+    <div class="develop" id="develop">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 develop-left">
+                    <div class="develop_title">Разработка
+                        <div class="develop_title_underlindes">
+                            <div class="underline1"></div>
+                            <div class="underline2"></div>
                         </div>
-                        <div class="develop_text">Программный комплекс FuelLabs был разработан ведущими специалистам IT-компании<br>PrimeCore и запущен под собственным брендом "Diesel Manager"<br>для первой транспортно-экспедиционной компании Прайм.</div>
-                        <a href="https://diesel-manager.com/" target="_blank" class="develop_a">Посмотреть проект diesel manager</a>
                     </div>
-                    <div class="develop-right"></div>
+                    <div class="develop_text">Программный комплекс FuelLabs был разработан ведущими специалистам IT-компании<br>PrimeCore и запущен под собственным брендом "Diesel Manager"<br>для первой транспортно-экспедиционной компании Прайм.</div>
+                    <a href="https://diesel-manager.com/" target="_blank" class="develop_a">Посмотреть проект diesel manager</a>
                 </div>
+                <div class="develop-right"></div>
             </div>
         </div>
-            
-        <div class="about">
-            <div class="container">
-                <div class="row">
-                    <div class="about-img">
-                    </div>
-                    <div class="col-sm-8 col-sm-offset-4 ">
-                       <div class="about-text">
+    </div>
+
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-img">
+                </div>
+                <div class="col-sm-8 col-sm-offset-4 ">
+                    <div class="about-text">
+                       <img src="img/quot1.png" alt="" class="quot quot1">
                         С введением комплекса Diesel Maneger, как дополнительного инстркмента в нашу внутреннюю систему продажи дизельного топлива мы смогли увеличить реализацию в несколько раз. Более того, а течении первых 2-х месяцев, обьемы продаж через DM сравнялись с нашими стандартными методами продаж. Мы и сейчас наблюдаем устойчивый рост интереса клиентов к покупкам именно через интерент. Считаем, что это новая ниша о которой попросту ранее даже не задывались. Diesel Maneger обладает целым рядом ключевых преимущество, которые пришлись по душе клиентам компании Prime.
-                        </div>
-                        <div class="">
-                            <div class="author">Лёушкин Дмитрий</div>
-                            <div class="author_">Руководитель группы компаний "PRIME"</div>
-                        </div>
+                       <img src="img/quot2.png" alt="" class="quot quot2">
+                    </div>
+                    <div class="">
+                        <div class="author">Лёушкин Дмитрий</div>
+                        <div class="author_">Руководитель группы компаний "PRIME"</div>
                     </div>
                 </div>
             </div>
-            <div class="pattern4"></div>
         </div>
-        
-        <div class="advantages" id="advantages">
-            <div class="container">
-               <div class="advantages_title">Преимущества
-                   <div class="advantages_title_underlindes">
-                        <div class="underline1"></div>
-                        <div class="underline2"></div>
+        <div class="pattern4"></div>
+    </div>
+
+    <div class="advantages" id="advantages">
+        <div class="container">
+            <div class="advantages_title">Преимущества
+                <div class="advantages_title_underlindes">
+                    <div class="underline1"></div>
+                    <div class="underline2"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 icon_block">
+                    <div class="icons-img">
+                        <img src="img/icons1.png" alt="">
                     </div>
-               </div>
-                <div class="row">
-                    <div class="col-sm-6 icon_block">
-                        <div class="icons-img">
-                            <img src="img/icons1.png" alt="">
-                        </div>
-                        <div class="icons-text">
-                            <div class="icons-title">Простота интеграции</div>
-                            <div>Система реализована таким образом, что позволяет без дополнительных доработок интегрировать ее (базовый функционал) в любую рабочую модель, любой компании.</div>
-                        </div>
+                    <div class="icons-text">
+                        <div class="icons-title">Простота интеграции</div>
+                        <div>Система реализована таким образом, что позволяет без дополнительных доработок интегрировать ее (базовый функционал) в любую рабочую модель, любой компании.</div>
                     </div>
-                    <div class="col-sm-6 icon_block">
-                        <div class="icons-img">
-                            <img src="img/icons5.png" alt="">
-                        </div>
-                        <div class="icons-text">
-                            <div class="icons-title">Новые возможности для клиентов</div>
-                            <div>Подключая систему Fuel Labs вы автоматически расширяете каналы взаимодействия с клиентом. Результат вы увидете в увеличении пролива на всех вахиш заправках.</div>
-                        </div>
+                </div>
+                <div class="col-sm-6 icon_block">
+                    <div class="icons-img">
+                        <img src="img/icons5.png" alt="">
                     </div>
-                    <div class="col-sm-6 icon_block">
-                        <div class="icons-img">
-                            <img src="img/icons2.png" alt="">
-                        </div>
-                        <div class="icons-text">
-                            <div class="icons-title">Простота управления</div>
-                            <div>Одной из идеей которая учитывалась при разработке FuelLabs была минимизация обслуживающего персонала. Управлять Вашими продажами сможет один человек!</div>
-                        </div>
+                    <div class="icons-text">
+                        <div class="icons-title">Новые возможности для клиентов</div>
+                        <div>Подключая систему Fuel Labs вы автоматически расширяете каналы взаимодействия с клиентом. Результат вы увидете в увеличении пролива на всех вахиш заправках.</div>
                     </div>
-                    <div class="col-sm-6 icon_block">
-                        <div class="icons-img">
-                            <img src="img/icons6.png" alt="">
-                        </div>
-                        <div class="icons-text">
-                            <div class="icons-title">Клиенты 24/7</div>
-                            <div>Наша система работает круглосуточно. Это значит, что Ваши клиены смогут управлять своими покупками в удобное для них время.</div>
-                        </div>
+                </div>
+                <div class="col-sm-6 icon_block">
+                    <div class="icons-img">
+                        <img src="img/icons2.png" alt="">
                     </div>
-                    <div class="col-sm-6 icon_block">
-                        <div class="icons-img">
-                            <img src="img/icons3.png" alt="">
-                        </div>
-                        <div class="icons-text">
-                            <div class="icons-title">Экономия времени</div>
-                            <div>Благодаря продуманному интерфейсу, ваши клиенты перестанут тратить лишнее время</div>
-                        </div>
+                    <div class="icons-text">
+                        <div class="icons-title">Простота управления</div>
+                        <div>Одной из идеей которая учитывалась при разработке FuelLabs была минимизация обслуживающего персонала. Управлять Вашими продажами сможет один человек!</div>
                     </div>
-                    <div class="col-sm-6 icon_block">
-                        <div class="icons-img">
-                            <img src="img/icons7.png" alt="">
-                        </div>
-                        <div class="icons-text">
-                            <div class="icons-title">Правильный документооборот</div>
-                            <div>Забудьте о проблемах с выпиской документов. Система заполнит нужные документы за ваших клиентов.</div>
-                        </div>
+                </div>
+                <div class="col-sm-6 icon_block">
+                    <div class="icons-img">
+                        <img src="img/icons6.png" alt="">
                     </div>
-                    <div class="col-sm-6 icon_block">
-                        <div class="icons-img">
-                            <img src="img/icons4.png" alt="">
-                        </div>
-                        <div class="icons-text">
-                            <div class="icons-title">Стоимость внедрения</div>
-                            <div>По сравнению с другими системами автоматизации продаж ГСМ, Fuellabs имеет самую низкую стоимость, при этом предоставляя гибкие возможности для расширения функционала</div>
-                        </div>
+                    <div class="icons-text">
+                        <div class="icons-title">Клиенты 24/7</div>
+                        <div>Наша система работает круглосуточно. Это значит, что Ваши клиены смогут управлять своими покупками в удобное для них время.</div>
+                    </div>
+                </div>
+                <div class="col-sm-6 icon_block">
+                    <div class="icons-img">
+                        <img src="img/icons3.png" alt="">
+                    </div>
+                    <div class="icons-text">
+                        <div class="icons-title">Экономия времени</div>
+                        <div>Благодаря продуманному интерфейсу, ваши клиенты перестанут тратить лишнее время</div>
+                    </div>
+                </div>
+                <div class="col-sm-6 icon_block">
+                    <div class="icons-img">
+                        <img src="img/icons7.png" alt="">
+                    </div>
+                    <div class="icons-text">
+                        <div class="icons-title">Правильный документооборот</div>
+                        <div>Забудьте о проблемах с выпиской документов. Система заполнит нужные документы за ваших клиентов.</div>
+                    </div>
+                </div>
+                <div class="col-sm-6 icon_block">
+                    <div class="icons-img">
+                        <img src="img/icons4.png" alt="">
+                    </div>
+                    <div class="icons-text">
+                        <div class="icons-title">Стоимость внедрения</div>
+                        <div>По сравнению с другими системами автоматизации продаж ГСМ, Fuellabs имеет самую низкую стоимость, при этом предоставляя гибкие возможности для расширения функционала</div>
                     </div>
                 </div>
             </div>
-            <div class="patterns1"></div>
         </div>
-        
-        <div class="offers" id="offers">
-            <div class="container">
-                <div class="offers_title">Наши предложения
-                    <div class="offers_title_underlindes">
-                        <div class="underline1"></div>
-                        <div class="underline2"></div>
-                    </div>
+        <div class="patterns1"></div>
+    </div>
+
+    <div class="offers" id="offers">
+        <div class="container">
+            <div class="offers_title">Наши предложения
+                <div class="offers_title_underlindes">
+                    <div class="underline1"></div>
+                    <div class="underline2"></div>
                 </div>
-                
-                <div class="col-sm-4 offer">
-                    <div class="offer_title">Пакет FuelLab</div>
-                    <div class="offer_inf">Система FuelLab под Вашим  собственным брендом</div>
-                    <div class="offer_about">
-                        <ul>
-                            <li><span>Продающий лендинг с уникальным дизайном</span></li>
-                            <li><span>Личный кабинет пользователей</span></li>
-                            <li><span>Личный кабинет администратора системы</span></li>
-                            <li><span>Личные кабинеты опреаторов</span></li>
-                            <li><span>Личный кабинет менеджеров по продажам</span></li>
-                            <li><span>Реферальная программа для агентов</span></li>
-                            <li><span>Система топливных карт и талонов для клиентов</span></li>
-                            <li><span>Генерация договоров, счетов-фактур, и других сопроводительных документов</span></li>
-                            <li><span>История заправок клиента</span></li>
-                            <li><span>Удобная система уведомлений</span></li>
-                            <li><span>Инструкции и обучающие материалы</span></li>
-                        </ul>
-                    </div>
-                    <a href="" class="offer_btn offer_btn1">Заказать</a>
-                    <div class="popup popup1">
-                       <div class="popup_fixed">
-                        <div class="popup-overlay"></div>
-                          <div class="popup-content">
-                           <div class="popup-hide">&times;</div>
-                            <div>
-                              <div class="popup-title">Связаться с нами</div>
-                              <div class="popup-text">Пожалуйста, укажите Ваш номер мобильного телефона,  и наш менежер свяжется с Вами в ближайшее время</div>
-                              <div class="popup-input_title">Мобильный телефон:</div>
-                                <form class="popup-form popup-form1">
-                                    <input type="tel" id="pop-up_input_tel" name="tel" class="tel">
-                                    <input type="submit" class="contact-us_btn" value="Связаться">
-                               </form>
-                            </div>
-                          </div>
-                      </div>
-                    </div>
+            </div>
+
+            <div class="col-sm-4 offer">
+                <div class="offer_title">Пакет FuelLab</div>
+                <div class="offer_inf">Система FuelLab под Вашим  собственным брендом</div>
+                <div class="offer_about">
+                    <ul>
+                        <li><span>Продающий лендинг с уникальным дизайном</span></li>
+                        <li><span>Личный кабинет пользователей</span></li>
+                        <li><span>Личный кабинет администратора системы</span></li>
+                        <li><span>Личные кабинеты опреаторов</span></li>
+                        <li><span>Личный кабинет менеджеров по продажам</span></li>
+                        <li><span>Реферальная программа для агентов</span></li>
+                        <li><span>Система топливных карт и талонов для клиентов</span></li>
+                        <li><span>Генерация договоров, счетов-фактур, и других сопроводительных документов</span></li>
+                        <li><span>История заправок клиента</span></li>
+                        <li><span>Удобная система уведомлений</span></li>
+                        <li><span>Инструкции и обучающие материалы</span></li>
+                    </ul>
                 </div>
-                
-                <div class="col-sm-4 offer">
-                    <div class="offer_title">Пакет FuelLab PRO</div>
-                    <div class="offer_inf">Система FuelLab  с возможностью доработки функционала</div>
-                    <div class="offer_about">
-                        <ul>
-                            <li><span>Продающий лендинг с уникальным дизайном</span></li>
-                            <li><span>Личный кабинет пользователей</span></li>
-                            <li><span>Личный кабинет администратора системы</span></li>
-                            <li><span>Личные кабинеты опреаторов</span></li>
-                            <li><span>Личный кабинет менеджеров по продажам</span></li>
-                            <li><span>Реферальная программа для агентов</span></li>
-                            <li><span>Система топливных карт и талонов для клиентов</span></li>
-                            <li><span>Генерация договоров, счетов-фактур, и других сопроводительных документов</span></li>
-                            <li><span>История заправок клиента</span></li>
-                            <li><span>Удобная система уведомлений</span></li>
-                            <li><span>Инструкции и обучающие материалы</span></li>
-                            <li class="last-child"><div class="plus">+</div>
+                <a href="" class="offer_btn offer_btn1">Заказать</a>
+
+            </div>
+
+            <div class="col-sm-4 offer">
+                <div class="offer_title">Пакет FuelLab PRO</div>
+                <div class="offer_inf">Система FuelLab  с возможностью доработки функционала</div>
+                <div class="offer_about">
+                    <ul>
+                        <li><span>Продающий лендинг с уникальным дизайном</span></li>
+                        <li><span>Личный кабинет пользователей</span></li>
+                        <li><span>Личный кабинет администратора системы</span></li>
+                        <li><span>Личные кабинеты опреаторов</span></li>
+                        <li><span>Личный кабинет менеджеров по продажам</span></li>
+                        <li><span>Реферальная программа для агентов</span></li>
+                        <li><span>Система топливных карт и талонов для клиентов</span></li>
+                        <li><span>Генерация договоров, счетов-фактур, и других сопроводительных документов</span></li>
+                        <li><span>История заправок клиента</span></li>
+                        <li><span>Удобная система уведомлений</span></li>
+                        <li><span>Инструкции и обучающие материалы</span></li>
+                        <li class="last-child"><div class="plus">+</div>
                             <span><a href="">Доработка функционала</a></span></li>
-                        </ul>
-                    </div>
-                    <a href="" class="offer_btn offer_btn2">Заказать</a>
-                    <div class="popup popup2">
-                       <div class="popup_fixed">
-                        <div class="popup-overlay"></div>
-                          <div class="popup-content">
-                           <div class="popup-hide">&times;</div>
-                            <div>
-                              <div class="popup-title">Связаться с нами</div>
-                              <div class="popup-text">Пожалуйста, укажите Ваш номер мобильного телефона,  и наш менежер свяжется с Вами в ближайшее время</div>
-                              <div class="popup-input_title">Мобильный телефон:</div>
-                                <form class="popup-form popup-form2">
-                                    <input type="tel" id="pop-up_input_tel" name="tel" class="tel">
-                                    <input type="submit" class="contact-us_btn" value="Связаться">
-                               </form>
-                            </div>
-                          </div>
-                      </div>
-                    </div>
+                    </ul>
                 </div>
+                <a href="" class="offer_btn offer_btn2">Заказать</a>
+
             </div>
         </div>
-        
+    </div>
+
+    <div class="sections2">
         <div class="section2">
             <div class="container">
                 <div class="section2-text">Если Ваш бизнес нуждается в Автоматизации привлечении новых клиентов, освоение новых рынков сбыта, сокращении финансовых затрат оптимизации учета и расходов, контроле пролитых литров, повышении узнаваемости вашего бренда в сети, улучшении лояльности текущих и новых клиетов</div>
                 <div class="section2-title">Вы нашли надежного партнера</div>
             </div>
         </div>
-        
-        <div class="contact-us" id="contact-us">
+        <div class="section22">
             <div class="container">
-                <div class="contact-us_title">Остались вопросы? мы с радостью на них ответим</div>
-                <div class="row">
-                    <form class="col-sm-3 contact-form">
-                        <div class="input_title">Имя:</div>
-                        <input type="text" id="input_nane" name="name" class="name">
-                        <div class="input_title">E-mail:</div>
-                        <input type="email" id="input_email" name="email" class="email">
-                        <div class="input_title">Текст сообщения:</div>
-                        <textarea name="text" rows="9" class="text"></textarea>
-                        <input type="submit" class="contact-us_btn" value="Связаться">
-                        
-                        <div class="message-status">Сообщение отправленно</div>
-                        <div class="message-status_empty">Заполните поля</div>
-                        <div class="message-status_error">Неверно заполнены поля</div>
-                    </form>
-                </div>
+                <div class="section22-text">Система FuelLab уже доказала свою эффективность на практике. мы продолжаем работу над ее усовершенствованием. Будь с нами, поучи преимущество для своего бизнеса</div>
             </div>
-            <div class="patterns2"></div>
         </div>
-    </section>    
-    
-    
-    <footer class="footer">
+    </div>
+
+    <div class="contact-us" id="contact-us">
         <div class="container">
-            <div class="footer-top">FuelLabs © 2017</div>
-            <div class="footer-bottom"> Разработано в <img src="img/footer-logo.png" alt=""></div>
+            <div class="contact-us_title">Остались вопросы? мы с радостью на них ответим</div>
+            <div class="row">
+                <form class="col-sm-3 contact-form">
+                    <div class="input_title">Имя:</div>
+                    <input type="text" id="input_nane" name="name" class="name">
+                    <div class="input_title">E-mail:</div>
+                    <input type="email" id="input_email" name="email" class="email">
+                    <div class="input_title">Текст сообщения:</div>
+                    <textarea name="text" rows="9" class="text"></textarea>
+                    <button class="contact-us_btn">Связаться</button>
+
+                    <div class="message-status">Сообщение отправленно</div>
+                    <div class="message-status_empty">Заполните поля</div>
+                    <div class="message-status_error">Неверно заполнены поля</div>
+                </form>
+            </div>
         </div>
-    </footer>
+        <div class="patterns2"></div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-top">FuelLabs © 2017</div>
+        <div class="footer-bottom"> Разработано в <img src="img/footer-logo.png" alt=""></div>
+    </div>
+</footer>
+
+
+
+<div class="popup popup1">
+    <div class="popup_fixed">
+        <div class="popup-overlay"></div>
+        <div class="popup-content">
+            <div class="popup-hide">&times;</div>
+            <div>
+                <div class="popup-title">Связаться с нами</div>
+                <div class="popup-text">Пожалуйста, укажите Ваш номер мобильного телефона,  и наш менежер свяжется с Вами в ближайшее время</div>
+                <div class="popup-input_title">Мобильный телефон:</div>
+                <form class="popup-form popup-form2">
+                    <input type="tel" id="pop-up_input_tel" name="tel" class="tel">
+                    <button href="" class="contact-us_btn">Связаться</button>
+
+                    <div class="message-status">Сообщение отправленно</div>
+                    <div class="message-status_empty">Заполните поля</div>
+                    <div class="message-status_error">Неверно заполнены поля</div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup2">
+    <div class="popup_fixed">
+        <div class="popup-overlay"></div>
+        <div class="popup-content">
+            <div class="popup-hide">&times;</div>
+            <div>
+                <div class="popup-title">Связаться с нами</div>
+                <div class="popup-text">Пожалуйста, укажите Ваш номер мобильного телефона,  и наш менежер свяжется с Вами в ближайшее время</div>
+                <div class="popup-input_title">Мобильный телефон:</div>
+                <form class="popup-form popup-form2">
+                    <input type="tel" id="pop-up_input_tel2" name="tel" class="tel">
+                    <button class="contact-us_btn">Связаться</button>
+
+                    <div class="message-status">Сообщение отправленно</div>
+                    <div class="message-status_empty">Заполните поля</div>
+                    <div class="message-status_error">Неверно заполнены поля</div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

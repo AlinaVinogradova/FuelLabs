@@ -43,7 +43,7 @@ body{
 .header{
     position: absolute;
     width: 100%;
-    z-index: 2;
+    z-index: 100;
     background: transparent;
     transition: .3s;
 }
@@ -51,15 +51,19 @@ body{
   position: fixed;
   top:0;
   left: 0;
+  z-index: 20;
 }
 .header.fixed {
-  background-color: rgba(5, 23, 72, 0.8);;
+  background: rgba(5, 23, 72, 0.9);
 }
 .header.fixed .menu ul li a{
     color: #fff;
 }
 .header.fixed .menu ul li a:hover{
     color: #ed5104;
+}
+.header .container{
+    position: relative;
 }
 .logo{
     display: inline-block;
@@ -92,16 +96,17 @@ body{
 
 /*MOBILE MENU*/
 .nav-menu {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    background-color: #001e4d;
-    top: -300px;
+    position: fixed;
+    display: table !important;
+    width: 250px;
+    height: 100%;
+    right: -250px;
+    background: rgba(5, 23, 72, 0.9);
+    top: 60px;
     z-index: 999;
     margin: 0;
     padding: 0;
     text-align: center;
-    z-index: 9999;
 }
 #over-menu{
 	display: none;
@@ -109,7 +114,6 @@ body{
     position: fixed;
     width: 100%;
     height: 100%;
-    z-index: 99;
     top: 0;
     left: 0;
 }
@@ -117,21 +121,26 @@ body{
 #menu-mobile ul{
     list-style-type: none;
     padding: 0;
+    height: 100%;
+    vertical-align: middle;
+    display: table-cell;
+
 }
 #menu-mobile ul li{
     margin: 0;
-    padding: 10px;
+    padding: 15px 10px;
     text-transform: uppercase;
-    border-bottom: 1px solid #fff;
 }
 #menu-mobile ul li a{
     color: #fff;
-    text-decoration: none;
 }
-#menu-mobile ul li.menu-mobile_close{
+.menu-mobile_close{
+    display: none;
     font-size: 34px;
     padding: 0;
-    border: none;
+    position: absolute;
+    top: 7px;
+    right: 17px;
 }
 
 
@@ -212,16 +221,16 @@ body{
 
 .develop{
     background: url(../img/pattern1.png) no-repeat 38px 46px, 
-        url(../img/pattern2.png) no-repeat 36% 109px, 
+        url(../img/pattern2.png) no-repeat 36% 131px, 
         #051748;
     background: url(../img/pattern1.png) no-repeat 38px 46px,
-        url(../img/pattern2.png) no-repeat 36% 109px, 
+        url(../img/pattern2.png) no-repeat 36% 131px, 
         -moz-linear-gradient(left, #051748 0%, #01091e 50%);
     background: url(../img/pattern1.png) no-repeat 38px 46px,
-        url(../img/pattern2.png) no-repeat 36% 109px, 
+        url(../img/pattern2.png) no-repeat 36% 131px, 
         -webkit-linear-gradient(left, #051748 0%,#01091e 50%);
     background: url(../img/pattern1.png) no-repeat 38px 46px, 
-        url(../img/pattern2.png) no-repeat 36% 109px, 
+        url(../img/pattern2.png) no-repeat 36% 131px, 
         linear-gradient(to right, #051748 0%,#01091e 50%);
     position: relative;
     height: 520px;
@@ -269,17 +278,37 @@ body{
     height: 50px;
     line-height: 50px;
     color: #fff;
+    z-index: 1;
     padding: 0 20px;
     font-size: 22px;
     white-space: nowrap;
     font-family: SansNarrow;
     font-weight: 400;
+    overflow: hidden;
     transition: .3s;
+}
+.develop_a:before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 300px;
+    top: 33%;
+    left: 44%;
+    background: #fff;
+    z-index: -1;
+    opacity: 1;
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    -webkit-transition: all .3s linear 0s;
+    transition: all .3s linear 0s;
 }
 .develop_a:hover,
 .develop_a:focus{
     color: #ed5104;
     background: transparent;
+}
+.develop_a:hover:before{
+    width: 100%;
 }
 .develop-right {
     background: url(../img/icon2.png) no-repeat;
@@ -309,6 +338,19 @@ body{
 }
 .about .about-text{
     margin: 80px 0 50px;
+    position: relative;
+}
+.about .quot{
+    position: absolute;
+    width: 35px;
+}
+.about .quot1{
+    top: -30px;
+    left: -35px;
+}
+.about .quot.quot2{
+    bottom: -15px;
+    right: 158px;
 }
 .about-img{
     background: url(../img/photo.png) no-repeat;
@@ -332,16 +374,22 @@ body{
     padding: 80px 0 60px;
     position: relative;
 }
+.advantages:after{
+    content: "";
+    background: url(../img/pattern8.png) no-repeat;
+    width: 50%;
+    height: 130px;
+    bottom: -60px;
+    left: 44%;
+    position: absolute;
+}
 .patterns1{
     position: absolute;
     bottom: -60px;
     right: 0;
     width: 100%;
     height: 100%;
-    background: url(../img/pattern5.png) no-repeat 89% 421px,
-        url(../img/pattern6.png) no-repeat 98% 156px,
-        url(../img/pattern8.png) no-repeat 83% 670px,
-        url(../img/pattern7.png) no-repeat 95% 540px;
+    background: url(../img/patterns1.png) no-repeat 90% 205px;
 }
 .advantages_title{
     position: relative;
@@ -395,20 +443,14 @@ body{
 
 
 .offers{
-    background: url(../img/pattern9.png) no-repeat 90% 95px,
-        url(../img/pattern12.png) no-repeat 59% 344px,
-        url(../img/pattern13.png) no-repeat 94% 245px,
-        url(../img/pattern14.png) no-repeat 96% 468px,
-        url(../img/pattern15.png) no-repeat 61% 52px,
-        url(../img/pattern11.png) no-repeat 78% 284px,
-        url(../img/pattern10.png) no-repeat  65% 11%;
+    background: url(../img/patterns2.png) no-repeat 76% 23px;
 }
 .offers_title{
     text-transform: uppercase;
     color: #051748;
     font-size: 32px;
     font-family: ProstoSans;
-    margin: 40px 0;
+    margin: 61px 0 40px;
     position: relative;
 }
 .offers_title_underlindes div{
@@ -441,9 +483,12 @@ body{
     display: inline-block;
     background: #ed5104;
     border: 1px solid #ed5104;
+    position: relative;
+    overflow: hidden;
     height: 30px;
     line-height: 30px;
     color: #fff;
+    z-index: 1;
     padding: 0 30px;
     white-space: nowrap;
     font-family: SansNarrow;
@@ -452,8 +497,25 @@ body{
     transition: .3s;
 }
 .offer_btn:hover{
-    background: #fff;
     color: #ed5104;
+}
+.offer_btn:before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 300px;
+    top: 33%;
+    left: 50%;
+    background: #fff;
+    z-index: -1;
+    opacity: 1;
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    -webkit-transition: all .2s linear 0s;
+    transition: all .2s linear 0s;
+}
+.offer_btn:hover:before{
+    width: 100%;
 }
 .offer_about ul{
     margin: 20px 0;
@@ -485,12 +547,26 @@ body{
 }
 
 
+
+.sections2{
+    overflow: hidden;
+    position: relative;
+    height: 252px;
+    width: 100%;
+}
 .section2{
     margin: 50px 0 0;
     padding: 40px 0;
     background:  url(../img/pattern16.png) no-repeat  92% 41px ,#051748;
     font-family: SansNarrow;
     font-weight: 400;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+.section2.animate{
+    left: -100%;
 }
 .section2-text{
     padding-right: 350px;
@@ -500,6 +576,28 @@ body{
     padding-top: 30px;
     text-transform: uppercase;
     font-family: ProstoSans;
+}
+.section22{
+    margin: 50px 0 0;
+    padding: 40px 0;
+    background:  url(../img/section2-img.png) no-repeat  12% 41px ,#ed5104;
+    height: 201px;
+    position: absolute;
+    width: 100%;
+    left: 100%;
+    top: 0;
+}
+.section22.animate{
+    left: 0%;
+}
+.section22-text {
+    text-transform: uppercase;
+    color: #fff;
+    font-family: SansNarrow;
+    font-weight: 700;
+    font-size: 23px;
+    padding-left: 370px;
+    text-align: right;
 }
 
 
@@ -512,18 +610,11 @@ body{
 }
 .patterns2{
     position: absolute;
-    bottom: -100px;
+    bottom: 0px;
     right: 0;
     width: 100%;
     height: 100%;
-    background: url(../img/pattern10.png) no-repeat 90% 238px,
-        url(../img/pattern7.png) no-repeat  70% 68%,
-        url(../img/pattern14.png) no-repeat,
-        url(../img/pattern17.png) no-repeat,
-        url(../img/pattern18.png) no-repeat,
-        url(../img/pattern11.png) no-repeat 53% 16%,
-        url(../img/pattern12.png) no-repeat 53% 60%,
-        url(../img/pattern16.png) no-repeat  92% 100%;
+    background: url(../img/patterns3.png) no-repeat 67% 155px;
 }
 .contact-us_title{
     text-transform: uppercase;
@@ -556,12 +647,15 @@ body{
 .contact-us textarea{
     margin-bottom: 30px;
 }
-input.contact-us_btn{
+.contact-us_btn{
     display: inline-block;
     background: #ed5104;
     border: 1px solid #ed5104;
     height: 30px;
     line-height: 30px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
     width: 140px;
     color: #fff;
     padding: 0 30px;
@@ -572,8 +666,25 @@ input.contact-us_btn{
     transition: .3s;
 }
 .contact-us_btn:hover{
-    background: #fff;
     color: #ed5104;
+}
+.contact-us_btn:before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 300px;
+    top: 33%;
+    left: 50%;
+    background: #fff;
+    z-index: -1;
+    opacity: 1;
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    -webkit-transition: all .2s linear 0s;
+    transition: all .2s linear 0s;
+}
+.contact-us_btn:hover:before{
+    width: 100%;
 }
 .message-status{
     display: none;
@@ -606,7 +717,7 @@ input.contact-us_btn{
 
 
 .footer{
-    background: #051748;
+    background: url(../img/pattern19.png) no-repeat 78% ,#051748;
     color: #fff;
     font-family: SansNarrow;
     font-weight: 400;
@@ -642,9 +753,9 @@ input.contact-us_btn{
     z-index: 1000;
 }
 .popup-content{
-    margin: 10% auto 0px;
+    margin: 13% auto 0px;
     width: 550px;
-    padding: 20px;
+    padding: 20px 20px 40px;
     background-color: #fff;
     position: relative;
     z-index: 1001;
@@ -677,6 +788,9 @@ input.contact-us_btn{
     height: 30px;
     line-height: 30px;
     width: 140px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
     color: #fff;
     padding: 0 30px;
     white-space: nowrap;
@@ -686,8 +800,25 @@ input.contact-us_btn{
     transition: .3s;
 }
 .popup-form .contact-us_btn:hover{
-    background: #fff;
     color: #ed5104;
+}
+.popup-form input.contact-us_btn:before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 300px;
+    top: 33%;
+    left: 50%;
+    background: #fff;
+    z-index: -1;
+    opacity: 1;
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    -webkit-transition: all .2s linear 0s;
+    transition: all .2s linear 0s;
+}
+.popup-form input.contact-us_btn:hover:before{
+    width: 100%;
 }
 .popup-input_title{
     color: #051748;
@@ -721,6 +852,9 @@ input.contact-us_btn{
     }
 }
 @media (max-width: 1200px){
+    .menu ul li{
+        margin: 0 20px;
+    }
     .main-banner{
         height: 600px;
     }
@@ -734,13 +868,39 @@ input.contact-us_btn{
     .section1 .computer img{
         width: 400px;
     }
+    .about {
+        background-position: 43% 41px;
+        background-size: 270px;
+    }
+    .about .quot.quot2 {
+        bottom: -20px;
+        right: 109px;
+    }
+    .advantages:after{
+        background-size: 550px;
+    }
     .offer_about ul{
         height: 370px;
     }
+    .offers {
+        background-position: 95% 118px;
+        background-size: 548px;
+    }
+    .patterns1{
+        display: none;
+    }
+    .pattern4 {
+        background-position: 95% 12px;
+        background-size: 400px;
+    }
 }
 @media (max-width: 992px){
+    .header{
+        background: rgba(5, 23, 72, 0.9);
+    }
     .logo{
         padding: 10px;
+        padding-top: 20px;
     }
     .to-nav-menu{
         float: right;
@@ -785,13 +945,28 @@ input.contact-us_btn{
         padding: 30px 0;
         line-height: normal;
     }
+    .about{
+        background: #ed5104;
+    }
+    .about .about-text {
+        margin: 50px 0;
+    }
+    .about .quot {
+        display: none;
+    }
     .advantages_title{
         font-size: 26px;
     }
     .develop-left{
         width: 42%;
     }
-    .develop,
+    .develop{
+        background: #051748;
+        background: -moz-linear-gradient(left, #051748 0%, #01091e 50%);
+        background:-webkit-linear-gradient(left, #051748 0%,#01091e 50%);
+        background: linear-gradient(to right, #051748 0%,#01091e 50%);
+        height: 320px;
+    }
     .develop-right{
         height: 320px;
     }
@@ -815,24 +990,70 @@ input.contact-us_btn{
     .icons-img img{
         width: 80px;
     }
+    .offers {
+        background: none;
+    }
+    .offers_title{
+        font-size: 26px;
+    }
+    .offer{
+        width: 50%;
+    }
     .offer_title{
         height: 62px;
     }
     .offer_about ul {
-        height: 505px;
+        height: 330px;
     }
-    
+    .section2{
+        background: #051748;
+    }
+    .section2-text{
+        padding-right: 0;
+    }
+    .section22{
+        background: #ed5104;
+    }
+    .section22-text{
+        padding-left: 0;
+    }
+    .advantages:after,
+    .patterns2,
+    .pattern4{
+        display: none;
+    }
+    .contact-us_title{
+        text-align: center;
+        font-size: 26px;
+    }
+    .contact-form {
+        width: 100%;
+        text-align: center;
+    }
+    .input_title{
+        font-size: 26px;
+    }
+    .contact-us textarea {
+        display: block;
+        margin: 0 auto 30px;
+    }
+    .footer {
+        background: #051748;
+    }
 }
 @media (max-width: 768px){
+    .nav-menu{
+        width: 200px;
+    }
     .main-banner {
         height: 310px;
     }
     .banner-title{
-        margin-top: 25px;
+        margin-top: 80px;
         font-size: 34px;
     }
     .banner-text{
-        bottom: -90px;
+        bottom: -75px;
         padding: 0;
     }
     .develop-left {
@@ -902,6 +1123,7 @@ input.contact-us_btn{
     }
     .offer{
         margin: 25px 0 40px;
+        width: 100%;
     }
     .offer_title{
         height: auto;
@@ -912,12 +1134,24 @@ input.contact-us_btn{
         margin: 20px auto;
         height: auto;
     }
-    .section2{
+    .section2,
+    .section22{
         text-align: center;
         margin-top: 0;
+        height: 220px;
+    }
+    .section22-text{
+        text-align: center;
+    }
+    .popup-content{
+        width: 500px;
     }
 }
 @media (max-width: 525px){
+    .banner-title{
+        font-size: 26px;
+        margin-top: 85px;
+    }
     .banner-text {
         bottom: -35px;
     }
@@ -930,8 +1164,24 @@ input.contact-us_btn{
     .offer_about ul{
         width: 80%;
     }
+    .section22-text{
+        font-size: 18px;
+    }
+    .contact-us input, .contact-us textarea{
+        width: 80%;
+    }
+    .popup-content{
+        width: 400px;
+    }
 }
 @media (max-width: 450px){
+    .banner-text {
+        bottom: 0;
+    }
+    .section1_title span{
+        display: block;
+        margin-bottom: -20px;
+    }
     .develop_title{
         top: 10%;
     }
@@ -952,6 +1202,19 @@ input.contact-us_btn{
         top: -1px;
     }
     .offer_about ul{
+        width: 100%;
+    }
+    .contact-us_title{
+        font-size: 23px;
+    }
+    .input_title {
+        font-size: 23px;
+        margin-top: 15px;
+    }
+    .popup-content{
+        width: 100%;
+    }
+    .popup-form input{
         width: 100%;
     }
 }
