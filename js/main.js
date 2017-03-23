@@ -115,12 +115,12 @@
         e.preventDefault();
         $('.offer_btn').css('z-index' , '0');
         $('.popup1').fadeIn(300);
-    })
+    });
      $('.offer_btn2').click(function(e){
         e.preventDefault();      
        $('.offer_btn').css('z-index' , '0');
         $('.popup2').fadeIn(300);
-    })
+    });
     $( ".popup-overlay, .popup-hide" ).click(function() {
          $('.offer_btn').css('z-index' , '1');
         $('.popup').fadeOut(300);
@@ -139,9 +139,41 @@
          $('.section2').animate({left: "-100%"}, 3000);
         setTimeout(
             function(){
-                 $('.section22').animate({left: "100%"}, 3000)
-                 $('.section2').animate({left: "0%"}, 3000)
+                 $('.section22').animate({left: "100%"}, 3000);
+                 $('.section2').animate({left: "0%"}, 3000);
             }, 10000);
-    };
-    setInterval(section2, 20000) ;
+     }
+     setInterval(section2, 20000) ;
+
+
+
+
+    //MAP
+     google.maps.event.addDomListener(window, 'load', init);
+
+     function init() {
+
+         var mapOptions = {
+             zoom: 15,
+             center: new google.maps.LatLng(49.98914582, 36.21567428), //Map coordinates
+
+             styles: [{"featureType":"administrative","elementType":"labels.text","stylers":[{"visibility":"on"}]},{"featureType":"administrative","elementType":"labels.text.stroke","stylers":[{"visibility":"off"}]},{"featureType":"landscape.man_made","elementType":"geometry","stylers":[{"visibility":"on"}]},{"featureType":"landscape.man_made","elementType":"geometry.fill","stylers":[{"color":"#f9c4aa"},{"saturation":"-19"},{"lightness":"11"}]},{"featureType":"landscape.man_made","elementType":"geometry.stroke","stylers":[{"color":"#ed5104"}]},{"featureType":"landscape.natural","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"poi","elementType":"labels.text.stroke","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#051748"}]},{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#051748"}]},{"featureType":"water","elementType":"geometry.stroke","stylers":[{"visibility":"on"}]},{"featureType":"water","elementType":"labels.text.stroke","stylers":[{"visibility":"off"}]}]
+         };
+
+         var mapElement = document.getElementById('map');
+
+         var map = new google.maps.Map(mapElement, mapOptions);
+
+         var marker = new google.maps.Marker({
+             position: new google.maps.LatLng(49.98744028, 36.2156488),  //Marker coordinates
+             map: map,
+             icon: 'img/marker.png',
+             title: 'FuelLabs!'
+         });
+     }
+//Для прокрутки карты по клику
+     $('.map-overlay').click(function(){
+         $('#map').removeClass('map-overlay_none').addClass('map-overlay_auto')
+     })
+
  });

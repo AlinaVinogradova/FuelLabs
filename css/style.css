@@ -146,10 +146,8 @@ body{
 
 
 .main-banner{
-    background: url(../img/banner.png) no-repeat;
     background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background: url(../img/banner.png) no-repeat fixed center;
     height: 790px;
     position: relative;
 }
@@ -163,7 +161,7 @@ body{
     text-transform: uppercase;
     position: relative;
     margin-top: 160px;
-    font-family: ProstoSans;
+    font-family: ProstoSans, sans-serif;
     font-weight: 700;
 }
 .banner-title_underlindes div{
@@ -184,7 +182,7 @@ body{
     position: absolute;
     bottom: 90px;
     line-height: 25px;
-    font-family: SansNarrow;
+    font-family: SansNarrow, sans-serif;
     font-size: 18px;
     font-weight: 400;
 }
@@ -194,7 +192,7 @@ body{
     background: #ed5104;
     text-transform: uppercase;
     font-size: 22px;
-    font-family: ProstoSans;
+    font-family: ProstoSans, sans-serif;
     font-weight: 700;
 }
 .section1 .container{
@@ -230,16 +228,16 @@ body{
 }
 
 .develop{
-    background: url(../img/pattern1.png) no-repeat 38px 46px, 
-        url(../img/pattern2.png) no-repeat 36% 131px, 
+    background: url(../img/pattern1.png) no-repeat 38px 46px,
+        url(../img/pattern2.png) no-repeat 36% 131px,
         #051748;
     background: url(../img/pattern1.png) no-repeat 38px 46px,
         url(../img/pattern2.png) no-repeat 36% 131px, 
         -moz-linear-gradient(left, #051748 0%, #01091e 50%);
     background: url(../img/pattern1.png) no-repeat 38px 46px,
-        url(../img/pattern2.png) no-repeat 36% 131px, 
+        url(../img/pattern2.png) no-repeat 36% 131px,
         -webkit-linear-gradient(left, #051748 0%,#01091e 50%);
-    background: url(../img/pattern1.png) no-repeat 38px 46px, 
+    background: url(../img/pattern1.png) no-repeat 38px 46px,
         url(../img/pattern2.png) no-repeat 36% 131px, 
         linear-gradient(to right, #051748 0%,#01091e 50%);
     position: relative;
@@ -257,7 +255,7 @@ body{
     color: #ed5104;
     position: relative;
     top: 33%;
-    font-family: ProstoSans;
+    font-family: ProstoSans, sans-serif;
     font-weight: 700;
 }
 .develop_title_underlindes div{
@@ -276,7 +274,7 @@ body{
 .develop_text{
     position: relative;
     top: 47%;
-    font-family: SansNarrow;
+    font-family: SansNarrow, sans-serif;
     font-weight: 400;
 }
 .develop_a{
@@ -293,7 +291,7 @@ body{
     padding: 0 20px;
     font-size: 22px;
     white-space: nowrap;
-    font-family: SansNarrow;
+    font-family: SansNarrow, sans-serif;
     font-weight: 400;
     overflow: hidden;
     transition: .3s;
@@ -301,7 +299,7 @@ body{
 .develop_a:before{
     content: '';
     position: absolute;
-    width: 0%;
+    width: 0;
     height: 300px;
     top: 33%;
     left: 44%;
@@ -322,9 +320,8 @@ body{
     width: 100%;
 }
 .develop-right {
-    background: url(../img/icon2.png) no-repeat;
     background-size: cover;
-    background-position: center;
+    background: url(../img/icon2.png) no-repeat center;
     height: 520px;
     width: 45%;
     position: absolute;
@@ -336,7 +333,7 @@ body{
     background: url(../img/pattern3.png) no-repeat 44% 29px,          
         #ed5104;
     height: 350px;
-    font-family: SansNarrow;
+    font-family: SansNarrow, sans-serif;
     font-weight: 400;
 }
 .pattern4{
@@ -364,25 +361,23 @@ body{
     right: 158px;
 }
 .about-img{
-    background: url(../img/photo.png) no-repeat;
+    background: url(../img/photo.png) no-repeat center;
     background-size: cover;
-    background-position: center;
-    height: 350px;
-    width: 33.33333333%;
+    height: 445px;
+    width: 585px;
     position: absolute;
     left: 0;
 }
 .author{
     font-size: 20px;
-    font-family: SansNarrow;
+    font-family: SansNarrow, sans-serif;
     font-weight: 700;
 }
 
 
 .advantages{
-    background: url(../img/bkg.png) no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background: url(../img/bkg.png) no-repeat fixed;
     padding: 80px 0 60px;
     position: relative;
 }
@@ -408,7 +403,7 @@ body{
     text-transform: uppercase;
     color: #051748;
     font-size: 32px;
-    font-family: ProstoSans;
+    font-family: ProstoSans, sans-serif;
     font-weight: 700;
     margin-bottom: 40px;
 }
@@ -428,7 +423,7 @@ body{
 .icon_block{
     height: 150px;
     display: table;
-    font-family: SansNarrow;
+    font-family: SansNarrow, sans-serif;
     font-weight: 400;
 }
 .icons-img{
@@ -450,7 +445,7 @@ body{
     color: #ed5104;
     font-size: 20px;
     margin-bottom: 10px;
-    font-family: SansNarrow;
+    font-family: SansNarrow, sans-serif;
     font-weight: 700;
 }
 
@@ -462,7 +457,7 @@ body{
     text-transform: uppercase;
     color: #051748;
     font-size: 32px;
-    font-family: ProstoSans;
+    font-family: ProstoSans, sans-serif;
     font-weight: 700;
     margin: 61px 0 40px;
     position: relative;
@@ -483,7 +478,7 @@ body{
     color: #ed5104;
     text-transform: uppercase;
     font-size: 22px;
-    font-family: ProstoSans;
+    font-family: ProstoSans, sans-serif;
     font-weight: 700;
     margin: 20px 0;
 }
@@ -491,7 +486,7 @@ body{
     color: #051748;
     margin: 20px 0;
     font-size: 22px;
-    font-family: SansNarrow;
+    font-family: SansNarrow, sans-serif;
     font-weight: 700;
 }
 .offer_btn{
@@ -506,7 +501,7 @@ body{
     z-index: 1;
     padding: 0 40px;
     white-space: nowrap;
-    font-family: SansNarrow;
+    font-family: SansNarrow, sans-serif;
     font-weight: 400;
     font-size: 20px;
     transition: .3s;
@@ -517,7 +512,7 @@ body{
 .offer_btn:before{
     content: '';
     position: absolute;
-    width: 0%;
+    width: 0;
     height: 300px;
     top: 33%;
     left: 50%;
@@ -540,7 +535,7 @@ body{
 .offer_about ul li{
     color: #ed5104; 
     margin: 0 10px;
-    font-family: SansNarrow;
+    font-family: SansNarrow, sans-serif;
     font-weight: 400;
 }
 .offer_about ul li span,
@@ -573,7 +568,7 @@ body{
     margin: 50px 0 0;
     padding: 40px 0;
     background:  url(../img/pattern16.png) no-repeat  92% 41px ,#051748;
-    font-family: SansNarrow;
+    font-family: SansNarrow, sans-serif;
     font-weight: 400;
     position: absolute;
     width: 100%;
@@ -590,7 +585,7 @@ body{
     font-size: 18px;
     padding-top: 30px;
     text-transform: uppercase;
-    font-family: ProstoSans;
+    font-family: ProstoSans, sans-serif;
     font-weight: 700;
 }
 .section22{
@@ -604,16 +599,89 @@ body{
     top: 0;
 }
 .section22.animate{
-    left: 0%;
+    left: 0;
 }
 .section22-text {
     text-transform: uppercase;
     color: #fff;
-    font-family: SansNarrow;
+    font-family: SansNarrow, sans-serif;
     font-weight: 700;
     font-size: 23px;
     padding-left: 370px;
     text-align: right;
+}
+
+
+.map_block{
+    margin-top: -1px;
+}
+#map {
+    width: 100%;
+    height: 800px;
+    position: absolute;
+}
+
+.map-overlay {
+    background: transparent;
+    position: relative;
+    width: 100%;
+    height: 800px;
+    top: 0;
+}
+.map-overlay_none{
+    pointer-events: none;;
+}
+.map-overlay_auto{
+    pointer-events: auto;
+}
+.our-contacts_block{
+    position: absolute;
+    top: 50px;
+    color: #051748;
+    background: #fff;
+    padding: 20px 30px;
+    width: 600px;
+}
+.our-contacts_block_title{
+    text-transform: uppercase;
+    font-size: 32px;
+    font-family: ProstoSans, sans-serif;
+    font-weight: 700;
+    margin: 0 0 50px;
+    position: relative;
+    display: inline-block;
+}
+.our-contacts_block_title_underlindes div{
+    height: 2px;
+    width: 520px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: #051748;
+}
+.our-contacts_block_title_underlindes div.underline2{
+    width: 100%;
+    top: 67px;
+}
+.our-contacts_block_text div{
+    margin: 15px 0;
+    font-family: SansNarrow, sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+}
+.our-contacts-img{
+    display: inline-block;
+    margin: 0 10px -15px 0;
+    background: url(../img/sprite.png) no-repeat;
+    background-size: 30px;
+    width: 30px;
+    height:40px;
+}
+.our-contacts-img.email{
+    background-position: 0 -45px;
+}
+.our-contacts-img.addr{
+    background-position: 0 -95px;
 }
 
 
@@ -626,7 +694,7 @@ body{
 }
 .patterns2{
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     right: 0;
     width: 100%;
     height: 100%;
@@ -636,12 +704,12 @@ body{
     text-transform: uppercase;
     color: #051748;
     font-size: 32px;
-    font-family: ProstoSans;
+    font-family: ProstoSans, sans-serif;
     font-weight: 700;
 }
 .input_title{
     color: #051748;
-    font-family: SansNarrow;
+    font-family: SansNarrow, sans-serif;
     font-weight: 700;   
     font-size: 28px;
     margin-top: 20px;
@@ -676,7 +744,7 @@ body{
     color: #fff;
     padding: 0 40px;
     white-space: nowrap;
-    font-family: SansNarrow;
+    font-family: SansNarrow, sans-serif;
     font-weight: 400;
     font-size: 20px;
     transition: .3s;
@@ -687,7 +755,7 @@ body{
 .contact-us_btn:before{
     content: '';
     position: absolute;
-    width: 0%;
+    width: 0;
     height: 300px;
     top: 33%;
     left: 50%;
@@ -735,7 +803,7 @@ body{
 .footer{
     background: url(../img/pattern19.png) no-repeat 78% ,#051748;
     color: #fff;
-    font-family: SansNarrow;
+    font-family: SansNarrow, sans-serif;
     font-weight: 400;
     padding: 20px 0;
 }
@@ -769,7 +837,7 @@ body{
     z-index: 1000;
 }
 .popup-content{
-    margin: 13% auto 0px;
+    margin: 13% auto 0;
     width: 550px;
     padding: 20px 20px 40px;
     background-color: #fff;
@@ -810,7 +878,7 @@ body{
     color: #fff;
     padding: 0 30px;
     white-space: nowrap;
-    font-family: SansNarrow;
+    font-family: SansNarrow, sans-serif;
     font-weight: 400;
     font-size: 18px;
     transition: .3s;
@@ -821,7 +889,7 @@ body{
 .popup-form input.contact-us_btn:before{
     content: '';
     position: absolute;
-    width: 0%;
+    width: 0;
     height: 300px;
     top: 33%;
     left: 50%;
@@ -838,7 +906,7 @@ body{
 }
 .popup-input_title{
     color: #051748;
-    font-family: SansNarrow;
+    font-family: SansNarrow, sans-serif;
     font-weight: 700;   
     font-size: 28px;
     margin-top: 20px;
@@ -919,8 +987,7 @@ body{
         background: rgba(5, 23, 72, 0.9);
     }
     .logo{
-        padding: 10px;
-        padding-top: 20px;
+        padding: 20px 10px 10px;
     }
     .to-nav-menu{
         float: right;
@@ -937,7 +1004,8 @@ body{
     .banner-title_underlindes,
     .develop_title_underlindes,
     .advantages_title_underlindes,
-    .offers_title_underlindes{
+    .offers_title_underlindes,
+    .our-contacts_block_title_underlindes{
         display: none;
     }
     .banner-title{
@@ -1037,10 +1105,21 @@ body{
     .section22-text{
         padding-left: 0;
     }
+    .map-overlay,
+    #map{
+        height: 600px;
+    }
+    .our-contacts_block_title{
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
     .advantages:after,
     .patterns2,
     .pattern4{
         display: none;
+    }
+    .our-contacts_block{
+        width: 500px;
     }
     .contact-us_title{
         text-align: center;
@@ -1155,6 +1234,7 @@ body{
         margin: 20px auto;
         height: auto;
     }
+    .sections2,
     .section2,
     .section22{
         text-align: center;
@@ -1162,6 +1242,16 @@ body{
         height: 220px;
     }
     .section22-text{
+        text-align: center;
+    }
+    .map_block {
+        margin-top: 256px;
+    }
+    .our-contacts_block {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: -256px;
         text-align: center;
     }
     .popup-content{
@@ -1235,6 +1325,34 @@ body{
         font-size: 23px;
         margin-top: 15px;
     }
+    .map-overlay, #map {
+        height: 550px;
+    }
+    .map_block {
+        margin-top: 210px;
+    }
+    .our-contacts_block{
+        top: -210px;
+    }
+    .our-contacts_block_title {
+        font-size: 22px;
+        margin-bottom: 0;
+    }
+    .our-contacts_block_text div {
+        font-size: 18px;
+    }
+    .our-contacts-img {
+        margin: 0 5px -15px 0;
+        background-size: 25px;
+        width: 25px;
+        height: 35px;
+    }
+    .our-contacts-img.email {
+        background-position: 0 -38px;
+    }
+    .our-contacts-img.addr {
+        background-position: 0 -80px;
+    }
     .popup-content{
         width: 100%;
     }
@@ -1245,7 +1363,7 @@ body{
 
 
 @keyframes mouse{
-    20%  {transform: translateY(-10px)};
-    50%  {transform: translateY(10px)};
-    100% {transform: translateY(0px)};
+    20%  {transform: translateY(-10px)}
+    50%  {transform: translateY(10px)}
+    100% {transform: translateY(0px)}
 }
