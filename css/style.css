@@ -28,7 +28,8 @@
 
 
 input,
-textarea{
+textarea,
+button{
     outline: none;
 }
 a:hover,
