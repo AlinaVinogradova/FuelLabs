@@ -153,6 +153,10 @@ body{
     height: 790px;
     position: relative;
 }
+.banner-cover{
+    background: rgba(0, 0, 0, 0.3);
+    height: 100%;
+}
 .banner-title{
     float: right;
     font-size: 48px;
@@ -212,6 +216,9 @@ body{
 }
 .section1_img img{
     width: 35px;
+}
+.section1_img:hover{
+    animation: mouse 1s;
 }
 .section1 .computer{
     position: absolute;
@@ -375,6 +382,7 @@ body{
 .advantages{
     background: url(../img/bkg.png) no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     padding: 80px 0 60px;
     position: relative;
 }
@@ -492,15 +500,15 @@ body{
     border: 1px solid #ed5104;
     position: relative;
     overflow: hidden;
-    height: 30px;
-    line-height: 30px;
+    height: 40px;
+    line-height: 40px;
     color: #fff;
     z-index: 1;
-    padding: 0 30px;
+    padding: 0 40px;
     white-space: nowrap;
     font-family: SansNarrow;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 20px;
     transition: .3s;
 }
 .offer_btn:hover{
@@ -660,18 +668,17 @@ body{
     display: inline-block;
     background: #ed5104;
     border: 1px solid #ed5104;
-    height: 30px;
-    line-height: 30px;
+    height: 40px;
+    line-height: 40px;
     position: relative;
     overflow: hidden;
     z-index: 1;
-    width: 140px;
     color: #fff;
-    padding: 0 30px;
+    padding: 0 40px;
     white-space: nowrap;
     font-family: SansNarrow;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 20px;
     transition: .3s;
 }
 .contact-us_btn:hover{
@@ -847,11 +854,18 @@ body{
 .popup-form input:focus{
     border-color: #ed5104;
 }
+.popup-form .message-status,
+.popup-form .message-status_empty{
+    left: 0;
+}
 
 
 
 
-@media (max-width: 1300px){
+@media (max-width: 1370px){
+    .main-banner{
+        height: 630px;
+    }
     .section1 .computer{
         right: 0;
         top: -261px;
@@ -863,9 +877,6 @@ body{
 @media (max-width: 1200px){
     .menu ul li{
         margin: 0 20px;
-    }
-    .main-banner{
-        height: 600px;
     }
     .banner-text{
         font-size: 16px;
@@ -1056,6 +1067,7 @@ body{
     }
     .main-banner {
         height: 310px;
+        background-position: 17% 0;
     }
     .banner-title{
         margin-top: 80px;
@@ -1184,6 +1196,9 @@ body{
     }
 }
 @media (max-width: 450px){
+    .main-banner {
+        background-position: 19% 0;
+    }
     .banner-text {
         bottom: 0;
     }
@@ -1226,4 +1241,11 @@ body{
     .popup-form input{
         width: 100%;
     }
+}
+
+
+@keyframes mouse{
+    20%  {transform: translateY(-10px)};
+    50%  {transform: translateY(10px)};
+    100% {transform: translateY(0px)};
 }

@@ -11,7 +11,7 @@
      
      
      //Плавный переход по меню
-      $(".menu li a, #menu-mobile a").click(function (e) { 
+      $(".menu li a, #menu-mobile a, .section1_img").click(function (e) { 
         e.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
@@ -32,11 +32,6 @@
  	data.name = $(this).find('input[name="name"]').val();
  	data.email = $(this).find('input[name="email"]').val();
  	data.text = $(this).find('textarea[name="text"]').val();
-
-//     var name_pattern=/^[a-zA-Z'][a-zA-Z-' ]+$/, //регулярное выражение для имени
-//     prov = name_pattern.test(data.name);  //проверка
-//if (prov==true) {      //если прошло проверку паттерна
-        
         
     if(data.name.length > 0 && data.email.length > 0 && data.text.length > 0 ){  //если поля заполнены
         $.ajax({
@@ -61,17 +56,6 @@
                     $('.message-status_empty').fadeOut(300);
                 },1000);
         }
-      
-        
-//    }
-//        else{
-//            $('.message-status_error').fadeIn(300);   //ошибка
-//            setTimeout(function(){
-//                    $('.message-status_error').fadeOut(300);
-//                },1000);
-//        }
-        
-        
   });
 
 
@@ -81,12 +65,6 @@
          var data = {};
 
          data.tel = $(this).find('input[name="tel"]').val();
-
-//     var name_pattern=/^[a-zA-Z'][a-zA-Z-' ]+$/, //регулярное выражение для имени
-//     prov = name_pattern.test(data.name);  //проверка
-//if (prov==true) {      //если прошло проверку паттерна
-
-
          if(data.tel.length > 0 ){  //если поля заполнены
              $.ajax({
                  type: 'POST',
@@ -112,17 +90,6 @@
                  $('.message-status_empty').fadeOut(300);
              },1000);
          }
-
-
-//    }
-//        else{
-//            $('.message-status_error').fadeIn(300);   //ошибка
-//            setTimeout(function(){
-//                    $('.message-status_error').fadeOut(300);
-//                },1000);
-//        }
-
-
      });
      
      //MOBILE MENU
