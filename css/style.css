@@ -364,8 +364,7 @@ body{
 .about-img{
     background: url(../img/photo.png) no-repeat center;
     background-size: cover;
-    height: 445px;
-    width: 585px;
+    height: 350px;
     position: absolute;
     left: 0;
 }
@@ -1132,6 +1131,7 @@ body{
     }
     .input_title{
         font-size: 26px;
+        display: block;
     }
     .contact-us textarea {
         display: block;
