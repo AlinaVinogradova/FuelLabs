@@ -1,21 +1,19 @@
 <?php
-$toEmail = "alina_vinogradova_92@mail.ru";
+$toEmail = "ai123ia@gmail.com";
 
 
 $headers= "MIME-Version: 1.0\r\n";
 $headers .= "Content-type: text/html; charset=utf-8\r\n";
 
-/* дополнительные шапки */
-$headers .= "From: FuelLabs <admin@site.ru>\r\n";
+/ дополнительные шапки /
+$headers .= "From: FuelLabs <info@fuel-labs.com>\r\n";
 
 
-$msg = 'Имя : ' . $_REQUEST['name'] . 
-"\r\n" . 'Email: '. $_REQUEST['email'] .
-"\r\n\r\n" . 'Текст: '. $_REQUEST['text'];
+$name = $_REQUEST['name'] ? 'Имя : ' . $_REQUEST['name'] . '<br>' : "";
+$email = $_REQUEST['email'] ? 'Email: '. $_REQUEST['email'] . '<br>' : "";
+$text = $_REQUEST['text'] ? 'Текст: '. $_REQUEST['text'] . '<br>' : "";
+$tel = $_REQUEST['tel'] ? 'Телефон: '. $_REQUEST['tel'] . '<br>' : "";
 
-if(mail($toEmail, 'FuelLabs', $msg, $headers)) {
-print "<p class='email-succes'>Сообщение было отправлено!</p>";
-} else {
-print "<p class='email-error'>Ошибка при отправке.</p>";
-}
-?>
+$msg =  $name . $email .$text . $tel;
+
+mail($toEmail, 'FuelLabs', $msg, $headers);
