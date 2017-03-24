@@ -176,4 +176,7 @@
          $('#map').removeClass('map-overlay_none').addClass('map-overlay_auto')
      })
 
+
+     $('.parallax-window').parallax({imageSrc: '/img/banner.png'});
+     $('.parallax-window2').parallax({imageSrc: '/img/bkg.png'});
  });
