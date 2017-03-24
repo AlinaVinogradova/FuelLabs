@@ -997,6 +997,7 @@ body{
     .main-banner{
         height: 500px;
         background-position: center;
+        background-size: cover;
     }
     .main-banner .container{
         height: 100%;
