@@ -14,6 +14,8 @@ $email = $_REQUEST['email'] ? 'Email: '. $_REQUEST['email'] . '<br>' : "";
 $text = $_REQUEST['text'] ? 'Текст: '. $_REQUEST['text'] . '<br>' : "";
 $tel = $_REQUEST['tel'] ? 'Телефон: '. $_REQUEST['tel'] . '<br>' : "";
 
+
+
 $msg =  $name . $email .$text . $tel;
 
 mail($toEmail, 'FuelLabs', $msg, $headers);
