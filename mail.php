@@ -1,5 +1,5 @@
 <?php
-$toEmail = "ai123ia@gmail.com";
+$toEmail = "fin4friends@gmail.com";
 
 
 $headers= "MIME-Version: 1.0\r\n";
