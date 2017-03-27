@@ -139,7 +139,7 @@
          $('.section2').animate({left: "-100%"}, 3000);
         setTimeout(
             function(){
-                 $('.section22').animate({left: "100%"}, 3000);
+                 $('.section22').animate({left: "100%"}, 3100);
                  $('.section2').animate({left: "0%"}, 3000);
             }, 10000);
      }
