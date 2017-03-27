@@ -130,18 +130,15 @@
      //MASK для popup
      $("#pop-up_input_tel").mask("+380 - 999 - 99 - 99" ,{placeholder:" "});
      $("#pop-up_input_tel2").mask("+380 - 999 - 99 - 99" ,{placeholder:" "});
-     
-     
-      
      //Анимация блока SECTION2        Interval - Timeout
      function section2() {
          $('.section22').animate({left: "0%"}, 3000);
          $('.section2').animate({left: "-100%"}, 3000);
-        setTimeout(
-            function(){
+         setTimeout(
+             function(){
                  $('.section22').animate({left: "100%"}, 3100);
                  $('.section2').animate({left: "0%"}, 3000);
-            }, 10000);
+             }, 10000);
      }
      setInterval(section2, 20000) ;
 
