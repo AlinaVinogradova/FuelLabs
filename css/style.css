@@ -220,7 +220,7 @@ body{
 .section1_img img.section1-arrow{
     position: absolute;
     bottom: 25px;
-    left: 11px;
+    left: 12px;
     width: 17px;
     animation: mouse 1.5s infinite;
     -webkit-transition: 0.5s;
@@ -817,9 +817,15 @@ body{
     color: #ed5104;
     margin: 8px 0;
 }
+.footer-bottom{
+    color: #fff;
+}
+.footer-bottom:hover{
+    color: #fff;
+}
 .footer-bottom img{
     height: 10px;
-    margin-left: 6px;
+    margin-left: 3px;
 }
 
 /*POP UP*/
@@ -954,7 +960,7 @@ body{
         width: 500px;
     }
 }
-@media (max-width: 1200px){
+@media (max-width: 1199px){
     .menu ul li{
         margin: 0 20px;
     }
@@ -994,7 +1000,7 @@ body{
         background-size: 400px;
     }
 }
-@media (max-width: 992px){
+@media (max-width: 991px){
     .header{
         background: rgba(5, 23, 72, 0.9);
     }
@@ -1022,14 +1028,11 @@ body{
         display: none;
     }
     .banner-title{
-        text-align: center;
         float: none;
     }
     .banner-text{
-        border: none;
-        text-align: center;
         bottom: -140px;
-        padding: 0 10px;
+        padding: 0 20px;
         position: relative;
     }
     .section1 .computer,
@@ -1127,7 +1130,6 @@ body{
         margin-bottom: 20px;
     }
     .advantages:after,
-    .patterns2,
     .pattern4{
         display: none;
     }
@@ -1135,12 +1137,11 @@ body{
         width: 500px;
     }
     .contact-us_title{
-        text-align: center;
+        padding-right: 40px;
         font-size: 26px;
     }
     .contact-form {
         width: 100%;
-        text-align: center;
     }
     .input_title{
         font-size: 26px;
@@ -1148,13 +1149,12 @@ body{
     }
     .contact-us textarea {
         display: block;
-        margin: 0 auto 30px;
     }
     .footer {
         background: #051748;
     }
 }
-@media (max-width: 768px){
+@media (max-width: 767px){
     .nav-menu{
         width: 200px;
     }
@@ -1162,11 +1162,16 @@ body{
         height: 310px;
         background-position: 17% 0;
     }
+    .banner-text{
+        text-align: center;
+    }
     .banner-title{
+        text-align: center;
         margin-top: 80px;
         font-size: 34px;
     }
     .banner-text{
+        border: none;
         bottom: -75px;
         padding: 0;
     }
@@ -1266,7 +1271,6 @@ body{
         position: absolute;
         left: 0;
         top: -256px;
-        text-align: center;
     }
     .popup-content{
         width: 500px;
@@ -1280,11 +1284,21 @@ body{
     .banner-text {
         bottom: -35px;
     }
+    .banner-text span{
+        display: block;
+        margin-bottom: -20px;
+    }
     .section1{
         font-size: 20px;
     }
+    .develop_text{
+        padding: 0 30px;
+    }
     .about{
         height: 600px;
+    }
+    .icon_block {
+        padding: 0 40px;
     }
     .offer_about ul{
         width: 80%;
@@ -1292,19 +1306,38 @@ body{
     .section22-text{
         font-size: 18px;
     }
+    .patterns2{
+        display: none;
+    }
     .contact-us input, .contact-us textarea{
         width: 80%;
     }
     .popup-content{
         width: 400px;
     }
+    .contact-us_title{
+        padding-right: 0;
+        text-align: center;
+    }
+    .contact-form {
+        text-align: center;
+    }
+    .contact-us textarea {
+        margin: 0 auto 30px;
+    }
 }
-@media (max-width: 450px){
+@media (max-width: 449px){
     .main-banner {
         background-position: 19% 0;
     }
     .banner-text {
         bottom: 0;
+    }
+    .banner-text span{
+        display: inline-block;
+    }
+    .section1_title{
+        padding: 15px 0 30px;
     }
     .section1_title span{
         display: block;
@@ -1315,6 +1348,7 @@ body{
     }
     .develop_text {
         top: 18%;
+        padding: 0;
     }
     .develop_a{
         top: 24%;
@@ -1329,6 +1363,9 @@ body{
         left: 0;
         top: -1px;
     }
+    .icon_block {
+        padding: 0 15px;
+    }
     .offer_about ul{
         width: 100%;
     }
@@ -1338,6 +1375,14 @@ body{
     .input_title {
         font-size: 23px;
         margin-top: 15px;
+    }
+    .section2-title{
+        padding-top: 20px;
+    }
+    .sections2,
+    .section2,
+    .section22{
+        height: 270px;
     }
     .map-overlay, #map {
         height: 550px;
@@ -1353,7 +1398,7 @@ body{
         margin-bottom: 0;
     }
     .our-contacts_block_text div {
-        font-size: 18px;
+        font-size: 17px;
     }
     .our-contacts-img {
         margin: 0 5px -15px 0;
@@ -1381,20 +1426,3 @@ body{
     50%  {transform: translateY(-5px)}
     100% {transform: translateY(0px)}
 }
-/*@keyframes mouse {*/
-    /*0% {*/
-        /*bottom: 5%;*/
-    /*}*/
-    /*25% {*/
-        /*bottom: 7%;*/
-    /*}*/
-    /*50% {*/
-        /*bottom: 10%;*/
-    /*}*/
-    /*75% {*/
-        /*bottom: 7%;*/
-    /*}*/
-    /*100% {*/
-        /*bottom: 5%;*/
-    /*}*/
-/*}*/
