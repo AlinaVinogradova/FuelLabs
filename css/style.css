@@ -1304,7 +1304,7 @@ body{
         width: 80%;
     }
     .section22-text{
-        font-size: 18px;
+        font-size: 20px;
     }
     .patterns2{
         display: none;
@@ -1324,6 +1324,7 @@ body{
     }
     .contact-us textarea {
         margin: 0 auto 30px;
+        resize: none;
     }
 }
 @media (max-width: 449px){
@@ -1348,7 +1349,7 @@ body{
     }
     .develop_text {
         top: 18%;
-        padding: 0;
+        padding: 0 5px;
     }
     .develop_a{
         top: 24%;
