@@ -229,15 +229,12 @@ body{
 .develop{
     background: url(../img/pattern1.png) no-repeat 38px 46px,
         url(../img/pattern2.png) no-repeat 36% 131px,
-        #051748;
-    background: url(../img/pattern1.png) no-repeat 38px 46px,
-        url(../img/pattern2.png) no-repeat 36% 131px, 
-        -moz-linear-gradient(left, #051748 0%, #01091e 50%);
-    background: url(../img/pattern1.png) no-repeat 38px 46px,
+        url(../img/pattern1.png) no-repeat 38px 46px,
         url(../img/pattern2.png) no-repeat 36% 131px,
-        -webkit-linear-gradient(left, #051748 0%,#01091e 50%);
-    background: url(../img/pattern1.png) no-repeat 38px 46px,
-        url(../img/pattern2.png) no-repeat 36% 131px, 
+        url(../img/pattern1.png) no-repeat 38px 46px,
+        url(../img/pattern2.png) no-repeat 36% 131px,
+        url(../img/pattern1.png) no-repeat 38px 46px,
+        url(../img/pattern2.png) no-repeat 36% 131px,
         linear-gradient(to right, #051748 0%,#01091e 50%);
     position: relative;
     height: 520px;
@@ -1418,4 +1415,7 @@ body{
     50%  {transform: translateY(-5px)}
     100% {transform: translateY(0px)}
 }
+
+
+
 
