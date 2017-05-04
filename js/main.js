@@ -134,16 +134,16 @@
       
      //Анимация блока SECTION2        Interval - Timeout
      function section1(){
-         $('.sections2').animate({left: "-100%"}, 2510);
-         setTimeout(section2, 5000) ;
+         $('.sections2').animate({left: "-100%"}, 2500);
+         setTimeout(section2, 15000) ;
      }
 
      function section2(){
          $('.sections2').animate({left: "0%"}, 2500);
-         setTimeout(section1, 5000) ;
+         setTimeout(section1, 15000) ;
      }
 
-     section1();
+     section2();
 
 
 

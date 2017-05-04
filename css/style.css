@@ -42,6 +42,9 @@ body{
     font-size: 20px;
     overflow-x: hidden;
 }
+.index-main{
+    overflow-x: hidden;
+}
 .header{
     position: absolute;
     width: 100%;
@@ -499,6 +502,7 @@ body{
     position: relative;
     overflow: hidden;
     height: 40px;
+    width: 149px;
     line-height: 38px;
     color: #fff;
     z-index: 1;
