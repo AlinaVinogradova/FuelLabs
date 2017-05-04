@@ -128,8 +128,7 @@
      
      
      //MASK для popup
-     $("#pop-up_input_tel").mask("+380 - 999 - 99 - 99" ,{placeholder:" "});
-     $("#pop-up_input_tel2").mask("+380 - 999 - 99 - 99" ,{placeholder:" "});
+     $("#pop-up_input_tel, #pop-up_input_tel2").mask("+380 - 99 - 999 - 99 - 99" ,{placeholder:" "});
      
      
       
