@@ -39,7 +39,7 @@ a:focus{
 body{
     cursor: default;
     color: #fff;
-    font-size: 16px;
+    font-size: 20px;
 }
 .header{
     position: absolute;
@@ -81,11 +81,14 @@ body{
     text-transform: uppercase;
     font-family: ProstoSans, sans-serif;
     font-weight: 700;
+    font-size: 16px;
     transition: .3s
 }
-.menu ul li a:hover{
+.menu ul li a:hover,
+.menu ul li a:focus{
     color: #ed5104;
     text-decoration: underline;
+    outline: none;
 }
 
 /*MOBILE MENU*/
@@ -171,12 +174,11 @@ body{
 }
 .banner-text{
     border-left: 1px solid #fff;
-    padding: 40px 0 0 20px;
+    padding: 40px 0 0 17px;
     position: absolute;
     bottom: 90px;
     line-height: 25px;
     font-family: SansNarrow, sans-serif;
-    font-size: 18px;
     font-weight: 400;
 }
 
@@ -219,7 +221,7 @@ body{
 }
 .section1 .computer{
     position: absolute;
-    right: -60px;
+    right: -70px;
     top: -304px;
 }
 .section1 .computer img{
@@ -250,7 +252,7 @@ body{
     font-size: 32px;
     color: #ed5104;
     position: relative;
-    top: 33%;
+    top: 26%;
     font-family: ProstoSans, sans-serif;
     font-weight: 700;
 }
@@ -269,13 +271,13 @@ body{
 }
 .develop_text{
     position: relative;
-    top: 47%;
+    top: 38%;
     font-family: SansNarrow, sans-serif;
     font-weight: 400;
 }
 .develop_a{
     position: relative;
-    top: 57%;
+    top: 54%;
     display: block;
     background: #ed5104;
     border: 1px solid #ed5104;
@@ -310,9 +312,11 @@ body{
 .develop_a:hover,
 .develop_a:focus{
     color: #ed5104;
-    background: transparent;
+    background: rgb(5, 23, 72);
+    outline: none;
 }
-.develop_a:hover:before{
+.develop_a:hover:before,
+.develop_a:focus:before{
     width: 100%;
 }
 .develop-right {
@@ -341,7 +345,7 @@ body{
     height: 450px;
 }
 .about .about-text{
-    margin: 80px 0 50px;
+    margin: 65px 0 30px;
     position: relative;
 }
 .about .quot{
@@ -354,7 +358,8 @@ body{
 }
 .about .quot.quot2{
     bottom: -15px;
-    right: 158px;
+    right: 40px;
+    z-index: 1;
 }
 .about-img{
     background: url(../img/photo.png) no-repeat center;
@@ -423,7 +428,7 @@ body{
 }
 .icons-img{
     display: table-cell;
-    width: 25%;
+    width: 22%;
     vertical-align: middle;
     padding-top: 10px;
 }
@@ -438,7 +443,6 @@ body{
 }
 .icons-title{
     color: #ed5104;
-    font-size: 20px;
     margin-bottom: 10px;
     font-family: SansNarrow, sans-serif;
     font-weight: 700;
@@ -501,8 +505,10 @@ body{
     font-size: 20px;
     transition: .3s;
 }
-.offer_btn:hover{
+.offer_btn:hover,
+.offer_btn:focus{
     color: #ed5104;
+    outline: none;
 }
 .offer_btn:before{
     content: '';
@@ -519,13 +525,14 @@ body{
     -webkit-transition: all .2s linear 0s;
     transition: all .2s linear 0s;
 }
-.offer_btn:hover:before{
+.offer_btn:hover:before,
+.offer_btn:focus:before{
     width: 100%;
 }
 .offer_about ul{
     margin: 20px 0;
     padding: 0;
-    height: 330px;
+    height: 435px;
 }
 .offer_about ul li{
     color: #ed5104; 
@@ -804,8 +811,9 @@ body{
     color: #fff;
 }
 .footer-bottom img{
-    height: 10px;
+    height: 13px;
     margin-left: 3px;
+    margin-top: -1px;
 }
 
 /*POP UP*/
@@ -944,14 +952,22 @@ body{
         margin: 0 20px;
     }
     .banner-text{
-        font-size: 16px;
+        border: none;
+        padding-left: 0;
     }
     .section1 .computer{
-        right: 0;
-        top: -209px;
+        right: -11px;
+        top: -197px;
     }
     .section1 .computer img{
-        width: 400px;
+        width: 330px;
+    }
+    .develop_title_underlindes div {
+        width: 500px;
+    }
+    .develop_title_underlindes div.underline2{
+        width: 300px;
+        left: 199px;
     }
     .about {
         background-position: 43% 41px;
@@ -961,11 +977,20 @@ body{
         bottom: -20px;
         right: 109px;
     }
+    .about .about-text {
+        margin: 35px 0 30px 20px;
+    }
     .advantages:after{
         background-size: 550px;
     }
+    .icon_block{
+        margin: 10px 0;
+    }
+    .icons-img {
+        width: 25%;
+    }
     .offer_about ul{
-        height: 370px;
+        height: 545px;
     }
     .offers {
         background-position: 95% 118px;
@@ -977,6 +1002,10 @@ body{
     .pattern4 {
         background-position: 95% 12px;
         background-size: 400px;
+    }
+    .sections2,
+    .section22{
+        height: 270px;
     }
 }
 @media (max-width: 991px){
@@ -1030,9 +1059,13 @@ body{
     }
     .about{
         background: #ed5104;
+        height: 370px;
+    }
+    .about-img{
+        height: 370px;
     }
     .about .about-text {
-        margin: 50px 0;
+        margin: 10px 0;
     }
     .about .quot {
         display: none;
@@ -1048,10 +1081,10 @@ body{
         background: -moz-linear-gradient(left, #051748 0%, #01091e 50%);
         background:-webkit-linear-gradient(left, #051748 0%,#01091e 50%);
         background: linear-gradient(to right, #051748 0%,#01091e 50%);
-        height: 320px;
+        height: 425px;
     }
     .develop-right{
-        height: 320px;
+        height: 425px;
     }
     .develop_title{
         font-size: 26px;
@@ -1065,10 +1098,10 @@ body{
         width: 303px;
         height: 45px;
         line-height: 45px;
-        font-size: 16px;
+        font-size: 20px;
     }
     .icon_block{
-        height: 160px;
+        height: 206px;
     }
     .icons-img img{
         width: 80px;
@@ -1086,7 +1119,7 @@ body{
         height: 62px;
     }
     .offer_about ul {
-        height: 330px;
+        height: 455px;
     }
     .section2{
         background: #051748;
@@ -1179,7 +1212,7 @@ body{
     .about{
         text-align: center;
         position: relative;
-        height: 550px;
+        height: auto;
         padding-top: 280px;
     }
     .about-img{
@@ -1273,14 +1306,20 @@ body{
     .develop_text{
         padding: 0 30px;
     }
-    .about{
-        height: 600px;
-    }
     .icon_block {
         padding: 0 40px;
     }
     .offer_about ul{
         width: 80%;
+    }
+    .sections2,
+    .section2,
+    .section22{
+        height: 270px;
+    }
+    .section22{
+        display: flex;
+        align-items: center;
     }
     .section22-text{
         font-size: 20px;
@@ -1321,6 +1360,7 @@ body{
     }
     .banner-text {
         bottom: 0;
+        font-size: 16px;
     }
     .banner-text span{
         display: inline-block;
@@ -1341,10 +1381,7 @@ body{
     }
     .develop_a{
         top: 24%;
-        width: 255px;
-    }
-    .about{
-        height: 670px;
+        width: 100%;
     }
     .about-img{
         width: 100%;
@@ -1371,7 +1408,7 @@ body{
     .sections2,
     .section2,
     .section22{
-        height: 270px;
+        height: 375px;
     }
     .map-overlay, #map {
         height: 550px;

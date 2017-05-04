@@ -32,7 +32,7 @@
  	data.name = $(this).find('input[name="name"]').val();
  	data.email = $(this).find('input[name="email"]').val();
  	data.text = $(this).find('textarea[name="text"]').val();
-        
+
     if(data.name.length > 0 && data.email.length > 0 && data.text.length > 0 ){  //если поля заполнены
         $.ajax({
             type: 'POST',
@@ -51,7 +51,7 @@
           });
     }
         else{
-            $('.message-status_empty').fadeIn(300);  
+            $('.message-status_empty').fadeIn(300);
             setTimeout(function(){
                     $('.message-status_empty').fadeOut(300);
                 },1000);
@@ -75,7 +75,7 @@
                      setTimeout(function(){
                          $('.message-status').fadeOut(300);
                         $('.offer_btn').css('z-index' , '1');
-                        $('.popup').fadeOut(300);
+                        $('.popup').fadeOut(100);
                      },1000);
                      $(".name, .email, .text").each(function (){   //очищаем поля
                          $(this).val("");
@@ -114,16 +114,16 @@
      $('.offer_btn1').click(function(e){
         e.preventDefault();
         $('.offer_btn').css('z-index' , '0');
-        $('.popup1').fadeIn(300);
+        $('.popup1').fadeIn(200);
     });
      $('.offer_btn2').click(function(e){
         e.preventDefault();      
        $('.offer_btn').css('z-index' , '0');
-        $('.popup2').fadeIn(300);
+        $('.popup2').fadeIn(200);
     });
     $( ".popup-overlay, .popup-hide" ).click(function() {
          $('.offer_btn').css('z-index' , '1');
-        $('.popup').fadeOut(300);
+        $('.popup').fadeOut(100);
     });
      
      
