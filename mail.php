@@ -1,5 +1,5 @@
 <?php
-$toEmail = "alina_vinogradova_92@mail.ru";
+$toEmail = "ceo@primecore.io";
 
 
 $headers= "MIME-Version: 1.0\r\n";
