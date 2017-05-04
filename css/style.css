@@ -40,6 +40,7 @@ body{
     cursor: default;
     color: #fff;
     font-size: 20px;
+    overflow-x: hidden;
 }
 .header{
     position: absolute;
@@ -567,18 +568,18 @@ body{
     overflow: hidden;
     position: relative;
     height: 252px;
-    width: 100%;
+    width: 200%;
+    left: 0;
 }
 .section2{
     margin: 50px 0 0;
     padding: 40px 0;
-    background:  url(../img/pattern16.png) no-repeat  92% 41px ,#051748;
+    background: url(../img/pattern16.png) no-repeat 92% 41px ,#051748;
     font-family: SansNarrow, sans-serif;
     font-weight: 400;
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: 0;
+    width: 50%;
+    display: inline-block;
+    float: left;
 }
 .section2-text{
     padding-right: 350px;
@@ -593,12 +594,12 @@ body{
 .section22{
     margin: 50px 0 0;
     padding: 40px 0;
-    background:  url(../img/section2-img.png) no-repeat  12% 41px ,#ed5104;
+    background: url(../img/section2-img.png) no-repeat 12% 41px ,#ed5104;
     height: 201px;
-    position: absolute;
-    width: 100%;
-    left: 100%;
-    top: 0;
+    position: relative;
+    width: 50%;
+    display: inline-block;
+    float: left;
 }
 .section22-text {
     text-transform: uppercase;
